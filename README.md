@@ -8,6 +8,8 @@
 
 <div align="center">
 
+[**简体中文**](./README.md) | [English](./English/README.md)
+
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 [![Skills](https://img.shields.io/badge/Skills-38-3a5a8c.svg?style=flat-square)](#-技能总览--skill-index)
 [![Atomic + Compound](https://img.shields.io/badge/原子%20×36-+%20复合%20×2-5b606b.svg?style=flat-square)](#-设计理念--design-philosophy)

@@ -8,6 +8,8 @@
 
 <div align="center">
 
+[简体中文](../README.md) | [**English**](./README.md)
+
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 [![Skills](https://img.shields.io/badge/Skills-38-3a5a8c.svg?style=flat-square)](#-skill-index)
 [![Atomic + Compound](https://img.shields.io/badge/Atomic%20×36-+%20Compound%20×2-5b606b.svg?style=flat-square)](#-design-philosophy)
@@ -502,5 +504,4 @@ Contact email: huyr17@outlook.com
 **⚖️ If this library helps you, please give it a Star — it helps more legal professionals and researchers discover it.**
 
 </div>
-
 
