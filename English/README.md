@@ -1,12 +1,14 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Legal-Skills-Chinese · Chinese Legal Reasoning Skills Library" width="100%">
+<img src="../assets/banner.svg" alt="Legal-Skills-Chinese · Chinese Legal Reasoning Skills Library" width="100%">
 
 </div>
 
 <br>
 
 <div align="center">
+
+[简体中文](../README.md) | [**English**](./README.md)
 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 [![Skills](https://img.shields.io/badge/Skills-38-3a5a8c.svg?style=flat-square)](#-skill-index)
@@ -19,6 +21,18 @@
 
 *A curated library of 38 hand-crafted, lawyer-verified legal reasoning skills for PRC statutory law.*
 
+
+### 🚪 Start here
+
+| Who | Where |
+|:--|:--|
+| **Chinese-speaking readers** | **[Chinese landing](../README.md)** + [`../skills/`](../skills/) — authoritative Chinese source |
+| **English-speaking readers** | **This tree (`English/`)** — full English mirrors of docs and every skill · You are in the right place |
+| **Experimental validation** | **[LegalSkills](https://github.com/MaryHu-YR/LegalSkills/)** — JuDGE + LexEval harness, multi-agent comparisons, and reproducible results |
+
+> Coding agents: edit Chinese sources only; see **[AGENTS.md](../AGENTS.md)** (and this tree’s [AGENTS.md](./AGENTS.md)).
+
+
 [Skill Index](#-skill-index) ·
 [Design Philosophy](#-design-philosophy) ·
 [Benchmark Coverage](#-benchmark-coverage) ·
@@ -27,7 +41,7 @@
 
 </div>
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 > [!WARNING]
 > ### ⚠️ Disclaimer
@@ -38,7 +52,7 @@
 > - This repository is intended for the **PRC statutory law** context. In civil law systems, cases do not have universal binding effect (except for guiding cases by the Supreme People's Court); analogical reasoning is strictly limited or prohibited in areas like criminal law elements and tax law. When applying skills to other jurisdictions (Hong Kong, Macau, Taiwan, common law systems, etc.), users must adjust the legal assumptions accordingly.
 > - AI-generated reasoning and conclusions may contain biases, omissions, or be outdated. **Final legal determinations must be made by qualified legal professionals who bear the corresponding responsibility.**
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 🧭 Design Philosophy
 
@@ -77,7 +91,7 @@ Each `SKILL.md` includes: **trigger conditions · capability boundaries · opera
 
 > 💡 **Why emphasize "hand‑written"?** These skills are individually authored and validated by practicing legal professionals to match Chinese legal reasoning and practice standards, rather than being generic, model-generated prompts.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 📚 Skill Index
 
@@ -97,205 +111,205 @@ Each `SKILL.md` includes: **trigger conditions · capability boundaries · opera
 
 <br>
 
-<img src="./assets/layer-1-input.svg" alt="INPUT · Input Layer" width="100%">
+<img src="../assets/layer-1-input.svg" alt="INPUT · Input Layer" width="100%">
 
-<img src="./assets/cat-1-retrieval.svg" alt="Retrieval" height="38">
+<img src="../assets/cat-1-retrieval.svg" alt="Retrieval" height="38">
 
 > **Theoretical basis**: legal sources theory (forms and hierarchy of law) · normative hierarchy theory (lower law must not conflict with higher law) · speech act theory (identify underlying purpose of discourse) — **References** [Westlaw Edge](https://westlaw.com) · [Lex Machina](https://lexmachina.com)
 
-[<img src="./assets/tag-case-retrieval.svg" alt="case-retrieval" height="30">](./skills/case-retrieval)
+[<img src="../assets/tag-case-retrieval.svg" alt="case-retrieval" height="30">](./skills/case-retrieval)
 
 Find cases, relevant rulings, and adjudicative rules related to the legal issue to support arguments, predict outcomes, and compare judicial positions.
 
-[<img src="./assets/tag-legal-article-retrieval.svg" alt="legal-article-retrieval" height="30">](./skills/legal-article-retrieval)
+[<img src="../assets/tag-legal-article-retrieval.svg" alt="legal-article-retrieval" height="30">](./skills/legal-article-retrieval)
 
 Generate standardized statute retrieval reports, verify the validity of legal bases, confirm claims/defenses' statutory support, and analyze judicial practice tendencies.
 
-[<img src="./assets/tag-other-legal-retrieval.svg" alt="other-legal-retrieval" height="30">](./skills/other-legal-retrieval)
+[<img src="../assets/tag-other-legal-retrieval.svg" alt="other-legal-retrieval" height="30">](./skills/other-legal-retrieval)
 
 Retrieve auxiliary information beyond statutes/judicial interpretations/typical cases: legislative background, regulatory cases, local guidance, industry standards, academic views, and foreign comparisons.
 
-[<img src="./assets/tag-legal-norm-validity-check.svg" alt="legal-norm-validity-check" height="30">](./skills/legal-norm-validity-check)
+[<img src="../assets/tag-legal-norm-validity-check.svg" alt="legal-norm-validity-check" height="30">](./skills/legal-norm-validity-check)
 
 Validate the legal effect of retrieved statutes: current validity, hierarchical correctness, and absence of conflicts with higher or peer norms to ensure reliable reasoning.
 
-[<img src="./assets/tag-legal-concept-comprehension.svg" alt="legal-concept-comprehension" height="30">](./skills/legal-concept-comprehension)
+[<img src="../assets/tag-legal-concept-comprehension.svg" alt="legal-concept-comprehension" height="30">](./skills/legal-concept-comprehension)
 
 Explain, distinguish, and decompose legal concepts, analyze constitutive elements and legal effects—this is the foundational unit of legal analysis.
 
 <br>
 
-<img src="./assets/cat-2-facts.svg" alt="Facts & Element Processing" height="38">
+<img src="../assets/cat-2-facts.svg" alt="Facts & Element Processing" height="38">
 
 > **Theoretical basis**: epistemology (philosophy of fact-finding) · elements-of-offense theory · evidence admissibility (relevance, authenticity, legality)
 
-[<img src="./assets/tag-legal-element-extraction.svg" alt="legal-element-extraction" height="30">](./skills/legal-element-extraction)
+[<img src="../assets/tag-legal-element-extraction.svg" alt="legal-element-extraction" height="30">](./skills/legal-element-extraction)
 
 Extract legally relevant facts from unstructured text (case descriptions, chat logs, reports) and translate lay descriptions into legal language.
 
-[<img src="./assets/tag-structured-element-extraction.svg" alt="structured-element-extraction" height="30">](./skills/structured-element-extraction)
+[<img src="../assets/tag-structured-element-extraction.svg" alt="structured-element-extraction" height="30">](./skills/structured-element-extraction)
 
 Decompose legal issues/facts/statutes into structured element checklists as a quality gate before downstream reasoning to ensure completeness and traceability.
 
-[<img src="./assets/tag-dispute-issue-identification.svg" alt="dispute-issue-identification" height="30">](./skills/dispute-issue-identification)
+[<img src="../assets/tag-dispute-issue-identification.svg" alt="dispute-issue-identification" height="30">](./skills/dispute-issue-identification)
 
 After element extraction, identify the points of dispute, exclude undisputed matters, and convert case relationships into legal-issue questions.
 
-[<img src="./assets/tag-evidence-evaluation.svg" alt="evidence-evaluation" height="30">](./skills/evidence-evaluation)
+[<img src="../assets/tag-evidence-evaluation.svg" alt="evidence-evaluation" height="30">](./skills/evidence-evaluation)
 
 Assess evidence for relevance, authenticity, and legality (the "three qualities") and evaluate probative value, admissibility, standards of proof, reinforcement suggestions, and exclusion of illegal evidence.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
-<img src="./assets/layer-2-process.svg" alt="PROCESS · Process Layer" width="100%">
+<img src="../assets/layer-2-process.svg" alt="PROCESS · Process Layer" width="100%">
 
-<img src="./assets/cat-3-interpret.svg" alt="Legal Interpretation" height="38">
+<img src="../assets/cat-3-interpret.svg" alt="Legal Interpretation" height="38">
 
 > **Theoretical basis**: hermeneutics of law · doctrinal legal studies · prioritized methods of textual/systematic/purposive interpretation
 
-[<img src="./assets/tag-legal-interpretation-argument.svg" alt="legal-interpretation-argument" height="30">](./skills/legal-interpretation-argument)
+[<img src="../assets/tag-legal-interpretation-argument.svg" alt="legal-interpretation-argument" height="30">](./skills/legal-interpretation-argument)
 
 Use textual, systematic, and purposive interpretation to rigorously argue ambiguous or contested statutory provisions.
 
-[<img src="./assets/tag-systematic-interpretation.svg" alt="systematic-interpretation" height="30">](./skills/systematic-interpretation)
+[<img src="../assets/tag-systematic-interpretation.svg" alt="systematic-interpretation" height="30">](./skills/systematic-interpretation)
 
 Systematic interpretation: interpret provisions in light of their position and related norms within the legal system to achieve coherent system‑level meaning.
 
-[<img src="./assets/tag-teleological-interpretation.svg" alt="teleological-interpretation" height="30">](./skills/teleological-interpretation)
+[<img src="../assets/tag-teleological-interpretation.svg" alt="teleological-interpretation" height="30">](./skills/teleological-interpretation)
 
 Purposive interpretation: when textual meaning is indeterminate, discover and justify the statutory purpose and choose the most legitimate meaning within the text's tolerable range.
 
-[<img src="./assets/tag-normative-meaning-argumentation.svg" alt="normative-meaning-argumentation" height="30">](./skills/Normative-Meaning-Argumentation)
+[<img src="../assets/tag-normative-meaning-argumentation.svg" alt="normative-meaning-argumentation" height="30">](./skills/Normative-Meaning-Argumentation)
 
 Analyze a norm's purposes and value orientation, determining how facts enter normative evaluation and the limits of normative subsumption.
 
 <br>
 
-<img src="./assets/cat-4-reasoning.svg" alt="Legal Reasoning" height="38">
+<img src="../assets/cat-4-reasoning.svg" alt="Legal Reasoning" height="38">
 
 > **Theoretical basis**: rule-based (syllogism mapping) and case-based reasoning · input-output logic · defeasible deontic logic (duty/permission/prohibition + exceptions) · possible-world semantics
 
-[<img src="./assets/tag-deductive-reasoning.svg" alt="deductive-reasoning" height="30">](./skills/deductive-reasoning)
+[<img src="../assets/tag-deductive-reasoning.svg" alt="deductive-reasoning" height="30">](./skills/deductive-reasoning)
 
 Strict deductive reasoning based on formal logic, turning unstructured norms and facts into testable syllogistic chains (P-F-C).
 
-[<img src="./assets/tag-inductive-reasoning.svg" alt="inductive-reasoning" height="30">](./skills/inductive-reasoning)
+[<img src="../assets/tag-inductive-reasoning.svg" alt="inductive-reasoning" height="30">](./skills/inductive-reasoning)
 
 Generalize rules, decisional patterns, or principles from one or multiple concrete cases or factual patterns.
 
-[<img src="./assets/tag-analogical-reasoning.svg" alt="analogical-reasoning" height="30">](./skills/analogical-reasoning)
+[<img src="../assets/tag-analogical-reasoning.svg" alt="analogical-reasoning" height="30">](./skills/analogical-reasoning)
 
 Where statutory gaps exist, identify the basis of similarity (tertium comparationis), justify analogical reasoning, and draw conclusions.
 
-[<img src="./assets/tag-legal-abductive-reasoning.svg" alt="legal-abductive-reasoning" height="30">](./skills/Legal-Abductive-Reasoning)
+[<img src="../assets/tag-legal-abductive-reasoning.svg" alt="legal-abductive-reasoning" height="30">](./skills/Legal-Abductive-Reasoning)
 
 Generate and evaluate the most reasonable explanatory hypotheses when evidence is incomplete or facts are unclear; combine with Mill's methods for structured causal inference.
 
-[<img src="./assets/tag-counterfactual-reasoning.svg" alt="counterfactual-reasoning" height="30">](./skills/counterfactual-reasoning)
+[<img src="../assets/tag-counterfactual-reasoning.svg" alt="counterfactual-reasoning" height="30">](./skills/counterfactual-reasoning)
 
 Assess how the legal result would differ if a fact/action had not occurred, used for causal attribution, apportioning liability, and damage scope.
 
-[<img src="./assets/tag-formal-legal-consequence.svg" alt="formal-legal-consequence" height="30">](./skills/formal-legal-consequence)
+[<img src="../assets/tag-formal-legal-consequence.svg" alt="formal-legal-consequence" height="30">](./skills/formal-legal-consequence)
 
 Terminal point of the reasoning chain: derive specific legal consequences (liability, compensation, sentence, sanction, contract effect) from established facts and matched norms.
 
-[<img src="./assets/tag-conflict-resolution.svg" alt="conflict-resolution" height="30">](./skills/conflict-resolution)
+[<img src="../assets/tag-conflict-resolution.svg" alt="conflict-resolution" height="30">](./skills/conflict-resolution)
 
 Handle statute collisions, evidentiary contradictions, issue prioritization, and source conflicts— the central hub touched by most complex legal analyses.
 
 <br>
 
-<img src="./assets/cat-6-risk.svg" alt="Risk Assessment & Value Judgment" height="38">
+<img src="../assets/cat-6-risk.svg" alt="Risk Assessment & Value Judgment" height="38">
 
 > **Theoretical basis**: risk assessment theory · precautionary principle · decision theory · philosophy of law (natural law/positivism/realism) · proportionality (suitability, necessity, balance) · public interest theory
 
-[<img src="./assets/tag-dispute-and-performance-risk.svg" alt="dispute-and-performance-risk" height="30">](./skills/dispute-and-performance-risk)
+[<img src="../assets/tag-dispute-and-performance-risk.svg" alt="dispute-and-performance-risk" height="30">](./skills/dispute-and-performance-risk)
 
 Assess whether a contract/transaction will produce disputes or breach risk, output structured risk checklists and mitigation suggestions.
 
-[<img src="./assets/tag-internal-compliance-risk-identification.svg" alt="internal-compliance-risk-identification" height="30">](./skills/internal-compliance-risk-identification)
+[<img src="../assets/tag-internal-compliance-risk-identification.svg" alt="internal-compliance-risk-identification" height="30">](./skills/internal-compliance-risk-identification)
 
 Systematically review corporate compliance frameworks, covering institutional completeness, process control effectiveness, and personal data protection.
 
-[<img src="./assets/tag-legal-risk-assessment.svg" alt="legal-risk-assessment" height="30">](./skills/legal-risk-assessment)
+[<img src="../assets/tag-legal-risk-assessment.svg" alt="legal-risk-assessment" height="30">](./skills/legal-risk-assessment)
 
 Assess regulatory penalty risks from licensing, regulatory compliance, and historical penalties dimensions.
 
-[<img src="./assets/tag-judicial-value-judgment.svg" alt="judicial-value-judgment" height="30">](./skills/judicial-value-judgment)
+[<img src="../assets/tag-judicial-value-judgment.svg" alt="judicial-value-judgment" height="30">](./skills/judicial-value-judgment)
 
 Assist judges in making reviewable, arguable value judgments in rights conflicts, legal uncertainty, and proportionality review.
 
-[<img src="./assets/tag-administrative-value-judgment.svg" alt="administrative-value-judgment" height="30">](./skills/administrative-value-judgment)
+[<img src="../assets/tag-administrative-value-judgment.svg" alt="administrative-value-judgment" height="30">](./skills/administrative-value-judgment)
 
 Assist administrative officers to make value judgments and interest balancing under administrative law principles, forming directional discretionary conclusions.
 
-[<img src="./assets/tag-legal-judgment-prediction.svg" alt="legal-judgment-prediction" height="30">](./skills/legal-judgment-prediction)
+[<img src="../assets/tag-legal-judgment-prediction.svg" alt="legal-judgment-prediction" height="30">](./skills/legal-judgment-prediction)
 
 **Compound ability ✦**: orchestrates 8 atomic abilities to predict charges, applicable statutes, sentence ranges, and sentencing factors, outputting a structured report with confidence scores.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
-<img src="./assets/layer-3-output.svg" alt="OUTPUT · Output Layer" width="100%">
+<img src="../assets/layer-3-output.svg" alt="OUTPUT · Output Layer" width="100%">
 
-<img src="./assets/cat-5-argument.svg" alt="Argument Organization & Evaluation" height="38">
+<img src="../assets/cat-5-argument.svg" alt="Argument Organization & Evaluation" height="38">
 
 > **Theoretical basis**: Dung's abstract argumentation frameworks (quantify argument strength via directed attack relations) · argumentation schemata (with critical questions) · Toulmin model (six elements, defeasibility) · multi-attribute utility decision theory
 
-[<img src="./assets/tag-argument-chain-construction.svg" alt="argument-chain-construction" height="30">](./skills/argument-chain-construction)
+[<img src="../assets/tag-argument-chain-construction.svg" alt="argument-chain-construction" height="30">](./skills/argument-chain-construction)
 
 Organize reasoning results into coherent, persuasive argument structures for opinions, counsel submissions, or defenses.
 
-[<img src="./assets/tag-argument-strength-evaluation.svg" alt="argument-strength-evaluation" height="30">](./skills/argument-strength-evaluation)
+[<img src="../assets/tag-argument-strength-evaluation.svg" alt="argument-strength-evaluation" height="30">](./skills/argument-strength-evaluation)
 
 Self-evaluate completed reasoning, provide strength/confidence ratings, and identify weak links in the chain.
 
-[<img src="./assets/tag-evidence-argument-chain.svg" alt="evidence-argument-chain" height="30">](./skills/evidence-argument-chain)
+[<img src="../assets/tag-evidence-argument-chain.svg" alt="evidence-argument-chain" height="30">](./skills/evidence-argument-chain)
 
 Map claim→elements→evidence→probative-value to ensure each claim has adequate evidence and every piece of evidence has a clear purpose.
 
-[<img src="./assets/tag-strategic-risk-prioritization.svg" alt="strategic-risk-prioritization" height="30">](./skills/strategic-risk-prioritization)
+[<img src="../assets/tag-strategic-risk-prioritization.svg" alt="strategic-risk-prioritization" height="30">](./skills/strategic-risk-prioritization)
 
 Prioritize multiple risk points by likelihood and impact to help decision-makers make strategic trade-offs under limited resources.
 
 <br>
 
-<img src="./assets/cat-7-docs.svg" alt="Documents & Case Management" height="38">
+<img src="../assets/cat-7-docs.svg" alt="Documents & Case Management" height="38">
 
 > **Theoretical basis**: speech act theory (ensure performative effects of documents) · AGM belief revision theory · normative change logic · operations research & scheduling theory · legal information reduction and compression theory
 
-[<img src="./assets/tag-legal-document-formatting.svg" alt="legal-document-formatting" height="30">](./skills/legal-document-formatting)
+[<img src="../assets/tag-legal-document-formatting.svg" alt="legal-document-formatting" height="30">](./skills/legal-document-formatting)
 
 Draft complete civil/criminal judgments based on court drafting standards, invoking atomic skills as needed.
 
-[<img src="./assets/tag-judgment-document-generation.svg" alt="judgment-document-generation" height="30">](./skills/judgment-document-generation)
+[<img src="../assets/tag-judgment-document-generation.svg" alt="judgment-document-generation" height="30">](./skills/judgment-document-generation)
 
 **Compound ability ✦**: orchestrates the same set of atomic abilities to generate a format‑compliant, rigorously reasoned complete criminal judgment.
 
-[<img src="./assets/tag-legal-document-summarization.svg" alt="legal-document-summarization" height="30">](./skills/legal-document-summarization)
+[<img src="../assets/tag-legal-document-summarization.svg" alt="legal-document-summarization" height="30">](./skills/legal-document-summarization)
 
 Produce structured summaries of judgments, rulings, mediations, arbitrations, and administrative penalties—faithful to the original, objective, highlighting the core while avoiding verbatim reproduction.
 
-[<img src="./assets/tag-multi-document-summarization.svg" alt="multi-document-summarization" height="30">](./skills/multi-document-summarization)
+[<img src="../assets/tag-multi-document-summarization.svg" alt="multi-document-summarization" height="30">](./skills/multi-document-summarization)
 
 Synthesize across multiple documents to extract consensus views, identify conflicts, and produce unified overviews and new integrative insights.
 
-[<img src="./assets/tag-legal-terminology.svg" alt="legal-terminology" height="30">](./skills/legal-terminology)
+[<img src="../assets/tag-legal-terminology.svg" alt="legal-terminology" height="30">](./skills/legal-terminology)
 
 Ensure legal terminology is accurate, unambiguous, and consistent with legal style; a fundamental atomic ability across document production.
 
-[<img src="./assets/tag-case-lifecycle-planning.svg" alt="case-lifecycle-planning" height="30">](./skills/case-lifecycle-planning)
+[<img src="../assets/tag-case-lifecycle-planning.svg" alt="case-lifecycle-planning" height="30">](./skills/case-lifecycle-planning)
 
 Plan case preparation timelines and generate litigation roadmaps with key dates.
 
-[<img src="./assets/tag-trial-scheduling-and-deadline-monitoring.svg" alt="trial-scheduling-and-deadline-monitoring" height="30">](./skills/trial-scheduling-and-deadline-monitoring)
+[<img src="../assets/tag-trial-scheduling-and-deadline-monitoring.svg" alt="trial-scheduling-and-deadline-monitoring" height="30">](./skills/trial-scheduling-and-deadline-monitoring)
 
 Track and remind of hearings/execution schedules, evidence submission, appeals, service, preservation renewals, and other statutory deadlines.
 
-[<img src="./assets/tag-billing-and-litigation-budget.svg" alt="billing-and-litigation-budget" height="30">](./skills/billing-and-litigation-budget)
+[<img src="../assets/tag-billing-and-litigation-budget.svg" alt="billing-and-litigation-budget" height="30">](./skills/billing-and-litigation-budget)
 
 Track attorney hours and expenses, prepare and monitor budgets, perform litigation cost analyses, and produce timesheets/expense reports.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 🎯 Benchmark Coverage
 
@@ -369,7 +383,7 @@ This library's design references mainstream Chinese legal NLP benchmarks. The ta
 
 </details>
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 🚀 Usage
 
@@ -407,22 +421,21 @@ The skills expect a minimal interface—an environment tool that accepts an inpu
 
 ```text
 Legal-Skills-Chinese/
-├── README.md
+├── README.md                 # Chinese landing (authoritative)
+├── AGENTS.md                 # agents: jurisdiction / skill pick / no fabrication / retrieval / priority
+├── English/                  # English parallel tree (you are here)
+│   ├── AGENTS.md             # pointer + English summary → ../AGENTS.md
+│   ├── README.md
+│   ├── CONTRIBUTING.md
+│   ├── MCP-PKULAW.md
+│   └── skills/<slug>/SKILL.md
 ├── CONTRIBUTING.md
 ├── MCP-PKULAW.md             # ← PKULAW MCP services and links
-├── assets/                   # README visual assets (banner, category labels, skill tags SVG)
-├── skills/                   # all 38 skills
+├── assets/                   # README visual assets
+├── skills/                   # all 38 skills (Chinese source of truth)
 │   ├── case-retrieval/
-│   │   ├── SKILL.md          # retrieval methodology (database-agnostic)
-│   │   └── README.md         # ← PKULAW MCP integration notes (case DB)
-│   ├── legal-article-retrieval/
 │   │   ├── SKILL.md
-│   │   └── README.md         # ← integration notes (statute DB)
-│   ├── legal-norm-validity-check/
-│   │   ├── SKILL.md
-│   │   └── README.md         # ← integration notes (statute provenance / hallucination correction)
-│   ├── <other-skill>/
-│   │   └── SKILL.md          # one SKILL.md per skill directory
+│   │   └── README.md
 │   └── ...
 └── .github/ISSUE_TEMPLATE/
     └── submit-skill.yml
@@ -440,7 +453,7 @@ description: |            # trigger conditions, applicable scenarios, capability
 
 > 📝 **On coverage:** This repository only includes skills that have been implemented as `SKILL.md`. Some conceptual dimensions (knowledge base/statute library construction, clarifying questions for client communication, crisis simulation) are yet to be implemented and will be added later.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 🤝 Submit a New Skill
 
@@ -467,7 +480,7 @@ We welcome community contributions. **No deep Git expertise required**—you can
 
 > See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for full guidelines.
 
-<img src="./assets/rule.svg" alt="" width="100%">
+<img src="../assets/rule.svg" alt="" width="100%">
 
 ## 📄 License
 
@@ -491,5 +504,4 @@ Contact email: huyr17@outlook.com
 **⚖️ If this library helps you, please give it a Star — it helps more legal professionals and researchers discover it.**
 
 </div>
-
 

@@ -8,6 +8,8 @@
 
 <div align="center">
 
+[**简体中文**](./README.md) | [English](./English/README.md)
+
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 [![Skills](https://img.shields.io/badge/Skills-38-3a5a8c.svg?style=flat-square)](#-技能总览--skill-index)
 [![Atomic + Compound](https://img.shields.io/badge/原子%20×36-+%20复合%20×2-5b606b.svg?style=flat-square)](#-设计理念--design-philosophy)
@@ -18,6 +20,16 @@
 **38 个由执业法律专业人员手写并验证的法律推理技能(Agent Skills),覆盖检索 → 推理 → 论证 → 文书的完整链条。**
 
 *A curated library of 38 hand-crafted, lawyer-verified legal reasoning skills for PRC statutory law.*
+
+### 🚪 从这里开始 · Start here
+
+| 你是谁 · Who | 去哪里 · Where |
+|:--|:--|
+| **中文读者** · Chinese-speaking readers | **本仓库根目录** ——权威中文源(本页 + [`skills/`](./skills/)) · You are in the right place |
+| **英文读者** · English-speaking readers | **[`English/`](./English/)** 英译平行树 · Full English mirrors of docs and every skill ([landing](./English/README.md)) |
+| **实验验证 / 评测复现** · Experimental validation | **[LegalSkills](https://github.com/MaryHu-YR/LegalSkills/)** · JuDGE + LexEval harness、多 Agent 对比与可复现结果 |
+
+> Coding agents: 日常改技能请只动中文源,见 **[AGENTS.md](./AGENTS.md)**。
 
 [技能总览](#-技能总览--skill-index) ·
 [设计理念](#-设计理念--design-philosophy) ·
@@ -407,11 +419,12 @@
 
 ```text
 Legal-Skills-Chinese/
-├── README.md
+├── README.md                 # 中文落地页(权威)
+├── AGENTS.md                 # 给 Agent:法域/选技/不编造/检索失败/指令优先级；维护时勿依赖英译目录
 ├── CONTRIBUTING.md
 ├── MCP-PKULAW.md             # ← 北大法宝 MCP 全部服务与链接总表
 ├── assets/                   # README 视觉资产(banner、类别标签、技能标签 SVG)
-├── skills/                   # 全部 38 个技能
+├── skills/                   # 全部 38 个技能(中文权威源)
 │   ├── case-retrieval/
 │   │   ├── SKILL.md          # 检索方法论(不绑定数据库)
 │   │   └── README.md         # ← 北大法宝 MCP 接入说明(案例库)
@@ -424,6 +437,10 @@ Legal-Skills-Chinese/
 │   ├── <其他技能名>/
 │   │   └── SKILL.md          # 每个技能一个目录,一个 SKILL.md
 │   └── ...
+├── English/                  # 英文平行树(文档+全部技能英译)
+│   ├── AGENTS.md             # 指向中文权威源
+│   ├── README.md
+│   └── skills/<slug>/SKILL.md
 └── .github/ISSUE_TEMPLATE/
     └── submit-skill.yml
 ```
